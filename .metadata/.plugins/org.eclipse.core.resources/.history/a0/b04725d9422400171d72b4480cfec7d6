@@ -1,0 +1,23 @@
+import java.util.InputMismatchException;
+
+import javax.swing.JOptionPane;
+public class banco_software {
+
+	public static void main(String[] args) {
+		
+		String montoString;
+		double monto=0;
+		boolean val;
+		
+	  do{
+			try {
+				montoString=JOptionPane.showInputDialog("Ingrese el monto a depositar");
+				monto=Double.parseDouble(montoString);
+				val = true;
+			} catch (java.lang.NumberFormatException e) {
+				JOptionPane.showMessageDialog(null, "Error de ingreso de datos");
+				val = false;
+			}
+	  }while(!val);
+	}
+}
