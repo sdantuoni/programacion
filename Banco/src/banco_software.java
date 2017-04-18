@@ -26,5 +26,13 @@ public class banco_software {
 				val = false;
 			}
 	  }while(!val);
+	  
+	  String moneda[]={"Dolares", "Pesos Uruguayos", "Euros"};
+	  
+	  int respuestaMoneda=JOptionPane.showOptionDialog(null, "Seleccione el tipo de moneda",
+			  "Seleccionar la moneda",
+			  JOptionPane.NO_OPTION,
+			  JOptionPane.QUESTION_MESSAGE, null, moneda, null);
+	  
 	}
 }
